@@ -1,6 +1,6 @@
 #Projet Passerelle 2
 
-Site disponible en ligne ici : blog.jmighty.fr
+Site disponible en ligne ici : [blog.jmighty.fr](https://blog.jmighty.fr)
 
 Nécessaire de créer un fichier .env qui contient les valeurs suivantes, évidemment à adapter, pour pouvoir tester le projet ailleurs :
 
