@@ -2,6 +2,6 @@
 
 class Security {
     static function encrypt($password) {
-        return sha1("a123".sha1("b456".$password."c789")."d123");
+        return sha1($_ENV['SALT'].sha1($_ENV['SALT'].$password.$_ENV['SALT']).$_ENV['SALT']);
     }
 }
