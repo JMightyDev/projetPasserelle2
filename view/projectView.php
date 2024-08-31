@@ -19,8 +19,8 @@
                 </div>
                 <?php if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 1) { ?>
                     <div class="card-footer text-end">
-                        <a class="btn btn-warning me-3" href="<?= $path ?>/<?= $project['id'] ?>/edit"><i class="bi bi-pencil"></i> Modifier</a>
-                        <a class="btn btn-danger" href="<?= $path ?>/<?= $project['id'] ?>/delete"><i class="bi bi-x-lg"></i> Supprimer</a>
+                        <a class="btn btn-warning me-3" href="<?= $project['id'] ?>/edit"><i class="bi bi-pencil"></i> Modifier</a>
+                        <a class="btn btn-danger" href="<?= $project['id'] ?>/delete"><i class="bi bi-x-lg"></i> Supprimer</a>
                     </div>
                 <?php } ?>
             </div>
