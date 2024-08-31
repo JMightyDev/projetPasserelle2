@@ -30,7 +30,7 @@ chargerFichierEnv();
 session_start();
 
 // Suppression des derniers slashs si nécessaire
-$base_url = ".";
+$base_url = "";
 
 // Définition de la constante
 define('BASE_URL', $base_url);
