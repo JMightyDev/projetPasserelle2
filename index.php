@@ -29,14 +29,8 @@ function chargerFichierEnv() {
 chargerFichierEnv();
 session_start();
 
-// Chemin absolu vers le répertoire courant
-$current_file = __FILE__;
-
-// Chemin absolu vers le répertoire parent (racine du site)
-$base_dir = dirname($current_file);
-
 // Suppression des derniers slashs si nécessaire
-$base_url = rtrim($base_dir, '/');
+$base_url = rtrim(__DIR__, '/');
 
 // Définition de la constante
 define('BASE_URL', $base_url);
