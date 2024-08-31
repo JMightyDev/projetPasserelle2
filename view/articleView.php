@@ -30,7 +30,7 @@
         <?php
             if (isset($_SESSION['email'])) {
         ?>
-            <form class="mb-4" method="post" action="/addComment">
+            <form class="mb-4" method="post" action="addComment">
                 <div class="mb-3 col-lg-6">
                     <label for="content" class="form-label">Commentaire</label>
                     <textarea class="form-control" id="content" rows="2" name="content"></textarea>
