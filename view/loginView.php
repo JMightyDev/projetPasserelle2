@@ -1,6 +1,6 @@
 <?php
     ob_start();
-    $path = dirname($_SERVER['PHP_SELF']) . "/";
+    $path = "." . dirname($_SERVER['PHP_SELF']) . "/";
 ?>
    <section class="container">
         <div class="row d-flex justify-content-center my-5 mx-1 col-lg-8 bg-perso1 p-4 rounded text-light">

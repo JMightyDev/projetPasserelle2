@@ -242,7 +242,7 @@
       setcookie('autoconnect', '', -1, '/');
       session_destroy();
       $path = dirname($_SERVER['PHP_SELF']) . "/";
-      header("location: $path");
+      header("location: .$path");
       exit();
    }
 

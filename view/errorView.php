@@ -1,7 +1,7 @@
 <?php
     ob_start();
     $title = "Accueil";
-    $path = dirname($_SERVER['PHP_SELF']) . "/";
+    $path = "." . dirname($_SERVER['PHP_SELF']) . "/";
     $onglet = "";
 ?>
     <section class="container">

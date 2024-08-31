@@ -1,5 +1,5 @@
 <?php
-    $path = dirname($_SERVER['PHP_SELF']) . "/";
+    $path = "." . dirname($_SERVER['PHP_SELF']) . "/";
 ?>
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
