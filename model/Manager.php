@@ -3,7 +3,12 @@
 class Manager {
     protected function connection() {
         try {
-            $bdd = new PDO('mysql:host=localhost;dbname=projet_passerelle_2;charset=utf8', 'root', '');
+            $host       = getenv('DB_HOST');
+            $dbname     = getenv('DB_NAME');
+            $login      = getenv('DB_USER');
+            $password   = getenv('DB_PASSWORD');
+            $port       = getenv('DB_PORT');
+            $bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8;port=$port", $login, $password);
         }
         catch(Exception $e) {
             die('Error : '.$e->getMessage());
