@@ -43,16 +43,16 @@
             }
             while($comment = $comments->fetch()) {
         ?>
-
-            <figure>
-                <blockquote class="blockquote">
-                    <p><?= $comment['content'] ?></p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    <?= $comment['username'] ?> le <?= date('d-m-Y à H:i:s', strtotime($comment['creation_datetime']));?>
-                </figcaption>
-            </figure>
-
+            <div class="card card-body">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p><?= $comment['content'] ?></p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <?= $comment['username'] ?> le <?= date('d-m-Y à H:i:s', strtotime($comment['creation_datetime']));?>
+                    </figcaption>
+                </figure>
+            </div>
         <?php } ?>
     </section>
 <?php
