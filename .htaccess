@@ -1,0 +1,15 @@
+# Active les liens symboliques
+Options +FollowSymLinks
+
+# Active le module de réécriture
+RewriteEngine On
+
+# Règles de réécriture :
+
+RewriteRule ^([a-zA-Z0-9]+)$ index.php?page=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9]+)/([0-9]+)?$ index.php?page=$1&id=$2 [L,QSA]
+
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)?$ index.php?page=$1&action=$2 [L,QSA]
+
+RewriteRule ^([a-zA-Z0-9]+)/([0-9]+)/([a-zA-Z0-9]+)?$ index.php?page=$1&id=$2&action=$3 [L,QSA]

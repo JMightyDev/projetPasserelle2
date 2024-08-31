@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, (
+    'primary':       #00ADB5,
+    'secondary':    #EEEEEE,
+    'perso1':       #393E46,
+    'perso2':        #222831
+));
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts"; // Obligé de faire ça à cause d'un bug avec la version scss de bootstrap-icons (sinon il trouve pas les .woff)
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons";
