@@ -1,6 +1,5 @@
 <?php
     ob_start();
-    $path = "." . dirname($_SERVER['PHP_SELF']) . "/";
 ?>
    <section class="container">
         <?php

@@ -1,5 +1,5 @@
 <?php
-    $path = "." . dirname($_SERVER['PHP_SELF']) . "/";
+    $path = BASE_URL;
 ?>
 <!DOCTYPE html>
 <html lang="fr" class="h-100">

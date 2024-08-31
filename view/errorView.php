@@ -1,7 +1,6 @@
 <?php
     ob_start();
-    $title = "Accueil";
-    $path = "." . dirname($_SERVER['PHP_SELF']) . "/";
+    $title = "Erreur";
     $onglet = "";
 ?>
     <section class="container">
