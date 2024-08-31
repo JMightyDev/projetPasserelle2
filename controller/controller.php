@@ -7,6 +7,34 @@
    require_once('model/Security.php');
    require_once('model/Verify.php');
 
+   //Fonction pour charger le fichier .env (fichier à créer à la racine, adapter le chemin dans la procédure sinon)
+   function chargerFichierEnv() {
+      $cheminFichierEnv = '.env';
+  
+      if (file_exists($cheminFichierEnv)) {
+          $lignes = file($cheminFichierEnv);
+          foreach ($lignes as $ligne) {
+              // Ignorer les lignes vides et les commentaires
+              if (trim($ligne) === '' || strpos(trim($ligne), '#') === 0) {
+                  continue;
+              }
+  
+              // Séparer le nom et la valeur
+              list($nom, $valeur) = explode('=', $ligne, 2);
+  
+              // Créer la variable d'environnement
+              putenv($nom . '=' . trim($valeur));
+          }
+      }
+  }
+  
+  // Appeler la fonction pour charger le fichier .env
+  chargerFichierEnv();
+  
+  // Utiliser les variables d'environnement
+  echo "L'hôte de la base de données est : " . getenv('DB_HOST');
+  exit();
+
    function autoConnect($secret) {
       $loginManager = new LoginManager();
       $loginManager->autoConnect($secret);
