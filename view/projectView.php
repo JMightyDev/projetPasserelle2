@@ -42,15 +42,13 @@
             }
             while($comment = $comments->fetch()) {
         ?>
-            <div class="card card-body">
-                <figure>
-                    <blockquote class="blockquote">
-                        <p><?= $comment['content'] ?></p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer">
+            <div class="card card-body mb-2 col-lg-6">
+                <blockquote class="blockquote mb-0">
+                    <p><?= $comment['content'] ?></p>
+                    <footer class="blockquote-footer">
                         <?= $comment['username'] ?> le <?= date('d-m-Y à H:i:s', strtotime($comment['creation_datetime']));?>
-                    </figcaption>
-                </figure>
+                    </footer>
+                </blockquote>
             </div>
 
         <?php } ?>
