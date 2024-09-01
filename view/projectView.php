@@ -19,8 +19,8 @@
                 </div>
                 <?php if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 1) { ?>
                     <div class="card-footer text-end">
-                        <a class="btn btn-warning me-3" href="<?= BASE_URL . $project['id'] ?>/edit"><i class="bi bi-pencil"></i> Modifier</a>
-                        <a class="btn btn-danger" href="<?= BASE_URL . $project['id'] ?>/delete"><i class="bi bi-x-lg"></i> Supprimer</a>
+                        <a class="btn btn-warning me-3" href="<?= BASE_URL ."project/". $project['id'] ?>/edit"><i class="bi bi-pencil"></i> Modifier</a>
+                        <a class="btn btn-danger" href="<?= BASE_URL ."project/". $project['id'] ?>/delete"><i class="bi bi-x-lg"></i> Supprimer</a>
                     </div>
                 <?php } ?>
             </div>
@@ -29,7 +29,7 @@
         <?php
             if (isset($_SESSION['email'])) {
         ?>
-            <form class="mb-4" method="post" action="<?= BASE_URL . $project['id'] ?>/addComment">
+            <form class="mb-4" method="post" action="<?= BASE_URL ."project/". $project['id'] ?>/addComment">
                 <div class="mb-3 col-lg-6">
                     <label for="content" class="form-label">Commentaire</label>
                     <textarea class="form-control" id="content" rows="2" name="content"></textarea>
