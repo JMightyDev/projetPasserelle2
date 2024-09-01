@@ -43,7 +43,7 @@
             }
             while($comment = $comments->fetch()) {
         ?>
-            <div class="card card-body mb-2">
+            <div class="card card-body mb-2 col-lg-6">
                 <blockquote class="blockquote mb-0">
                     <p><?= $comment['content'] ?></p>
                     <footer class="blockquote-footer">
