@@ -11,7 +11,7 @@
         ?>
         <?php if (isset($editMode)) { ?>
             <h1 class="text-dark my-4">Modifier le projet</h1>
-            <form method="post" action="edit">
+            <form method="post" action="article/<?= $article['id'] ?>">
         <?php } else { ?>
             <h1 class="text-dark my-4">Ajouter le projet</h1>
             <form method="post" action="newArticle">
