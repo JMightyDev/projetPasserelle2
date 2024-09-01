@@ -25,7 +25,7 @@
                                 <h5 class="card-title"><?= $project['title'] ?></h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet.</p>
                             </div>
-                            <a href="<?= $path ?>project/<?= $project['id']; ?>" class="stretched-link text-decoration-none"></a>
+                            <a href="project/<?= $project['id']; ?>" class="stretched-link text-decoration-none"></a>
                         </div>
                     </div>
                 <?php

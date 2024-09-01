@@ -11,10 +11,10 @@
         ?>
         <?php if (isset($editMode)) { ?>
             <h1 class="text-dark my-4">Modifier le projet</h1>
-            <form method="post" action="<?= $path ?>project/<?= $project['id'] ?>/edit">
+            <form method="post" action="<?= BASE_URL ?>project/<?= $project['id'] ?>/edit">
         <?php } else { ?>
             <h1 class="text-dark my-4">Ajouter le projet</h1>
-            <form method="post" action="<?= $path ?>newProject">
+            <form method="post" action="<?= BASE_URL ?>newProject">
         <?php } ?>
             <div class="mb-3">
                 <label for="title" class="form-label">Titre du projet</label>

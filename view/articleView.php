@@ -38,9 +38,9 @@
                 <button class="btn btn-perso1" type="submit"><i class="bi bi-plus-lg"></i> Ajouter un commentaire</button>
             </form>
         <?php
-            } else {
-                echo "<a class='text-decoration-none' href='$path/login'>Connectez-vous</a> pour ajouter des commentaires.";
-            }
+            } else { ?>
+                <a class='text-decoration-none' href='<?= BASE_URL ?>login'>Connectez-vous</a> pour ajouter des commentaires.";
+            <?php }
             while($comment = $comments->fetch()) {
         ?>
             <div class="card card-body mb-2 col-lg-6">

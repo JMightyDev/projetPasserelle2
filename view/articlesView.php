@@ -12,7 +12,7 @@
         <?php if (isset($articles)) { ?>
             <h1 class='text-dark my-4'>Mes articles</h1>
             <?php if (isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] == 1) { ?>
-                <a class="btn btn-perso1 mb-4" href="<?= $path ?>newArticle"><i class="bi bi-plus-lg"></i> Ajouter un article</a>
+                <a class="btn btn-perso1 mb-4" href="newArticle"><i class="bi bi-plus-lg"></i> Ajouter un article</a>
             <?php } ?>
             <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
                 <?php
@@ -25,7 +25,7 @@
                                 <h5 class="card-title"><?= $article['title'] ?></h5>
                                 <p class="card-text"><?= $article['subtitle'] ?></p>
                             </div>
-                            <a href="<?= $path ?>article/<?= $article['id']; ?>" class="stretched-link text-decoration-none"></a>
+                            <a href="article/<?= $article['id']; ?>" class="stretched-link text-decoration-none"></a>
                         </div>
                     </div>
                 <?php
