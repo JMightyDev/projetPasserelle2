@@ -29,22 +29,16 @@ function chargerFichierEnv() {
 chargerFichierEnv();
 session_start();
 
-// Suppression des derniers slashs si nécessaire
-$documentRoot = $_SERVER['DOCUMENT_ROOT'];
+function url(){
+    return sprintf(
+      "%s://%s%s",
+      isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+      $_SERVER['SERVER_NAME'],
+      $_SERVER['REQUEST_URI']
+    );
+}
 
-// Obtenir le chemin absolu du fichier PHP en cours d'exécution
-$currentFile = realpath(__FILE__);
-
-// Calculer le chemin relatif à partir du fichier PHP jusqu'à la racine du document
-$relativePath = substr($currentFile, strlen($documentRoot));
-
-// Extraire le chemin relatif vers public_html (ajuster en fonction de votre structure)
-$pathToPublicHtml = dirname($relativePath);
-
-// Définition de la constante
-define('BASE_URL', $pathToPublicHtml);
-
-echo $pathToPublicHtml;
+echo url();
 exit();
 
 require('controller/controller.php');
