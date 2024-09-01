@@ -39,9 +39,7 @@ function url(){
     return $protocol . "://" . $_SERVER['SERVER_NAME'] . "/";
 }
 
-$url = url();
-define('BASE_URL', $url);
-echo BASE_URL;
+define('BASE_URL', url());
 
 require('controller/controller.php');
 
