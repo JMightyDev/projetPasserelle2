@@ -41,6 +41,7 @@ function url(){
 
 $url = url();
 define('BASE_URL', $url);
+echo BASE_URL;
 
 require('controller/controller.php');
 
