@@ -38,7 +38,8 @@ function url(){
 }
 
 define('BASE_URL', url()); // Permet de connaitre le chemin vers la base du site, peu importe l'environnement test / prod / localhost / domaine etc
-
+echo BASE_URL;
+exit();
 require('controller/controller.php');
 
 try {
