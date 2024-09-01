@@ -29,8 +29,6 @@ function chargerFichierEnv() {
 chargerFichierEnv();
 session_start();
 
-echo $_SERVER['SERVER_NAME'] . " " . PHP_URL_HOST . " " . $_SERVER['REQUEST_URI'];
-
 exit();
 require('controller/controller.php');
 
