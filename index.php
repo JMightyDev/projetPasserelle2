@@ -29,16 +29,8 @@ function chargerFichierEnv() {
 chargerFichierEnv();
 session_start();
 
-function url(){
-    return sprintf(
-      "%s://%s%s",
-      isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-      $_SERVER['SERVER_NAME']
-    );
-}
+echo $_SERVER['SERVER_NAME'] . " " . PHP_URL_HOST . " " . $_SERVER['REQUEST_URI'];
 
-define('BASE_URL', url()); // Permet de connaitre le chemin vers la base du site, peu importe l'environnement test / prod / localhost / domaine etc
-echo BASE_URL;
 exit();
 require('controller/controller.php');
 
