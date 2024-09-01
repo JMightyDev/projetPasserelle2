@@ -36,7 +36,7 @@ function url(){
     else{
         $protocol = 'http';
     }
-    return $protocol . "://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+    return $protocol . "://" . $_SERVER['SERVER_NAME'] . "/";
 }
 
 $url = url();
