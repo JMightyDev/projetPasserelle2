@@ -1,5 +1,5 @@
 <?php
-    $path = $_SERVER['SERVER_NAME']."/";
+    $path = BASE_URL;
 ?>
 <!DOCTYPE html>
 <html lang="fr" class="h-100">

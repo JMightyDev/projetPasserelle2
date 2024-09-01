@@ -29,6 +29,22 @@ function chargerFichierEnv() {
 chargerFichierEnv();
 session_start();
 
+function url(){
+    if(isset($_SERVER['HTTPS'])){
+        $protocol = ($_SERVER['HTTPS'] && $_SERVER['HTTPS'] != "off") ? "https" : "http";
+    }
+    else{
+        $protocol = 'http';
+    }
+    return $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+}
+
+$url = url();
+define('BASE_URL', $url);
+
+echo BASE_URL;
+exit();
+
 require('controller/controller.php');
 
 try {
