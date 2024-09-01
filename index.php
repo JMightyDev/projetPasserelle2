@@ -44,6 +44,9 @@ $pathToPublicHtml = dirname($relativePath);
 // Définition de la constante
 define('BASE_URL', $pathToPublicHtml);
 
+echo $pathToPublicHtml;
+exit();
+
 require('controller/controller.php');
 
 try {
