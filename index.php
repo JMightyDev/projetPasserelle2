@@ -29,7 +29,6 @@ function chargerFichierEnv() {
 chargerFichierEnv();
 session_start();
 
-exit();
 require('controller/controller.php');
 
 try {
