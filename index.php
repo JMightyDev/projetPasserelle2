@@ -42,9 +42,6 @@ function url(){
 $url = url();
 define('BASE_URL', $url);
 
-echo BASE_URL;
-exit();
-
 require('controller/controller.php');
 
 try {
