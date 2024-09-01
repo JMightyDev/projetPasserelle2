@@ -39,7 +39,7 @@
             </form>
         <?php
             } else { ?>
-                <a class='text-decoration-none' href='<?= BASE_URL ?>login'>Connectez-vous</a> pour ajouter des commentaires.";
+                <p><a class='text-decoration-none' href='<?= BASE_URL ?>login'>Connectez-vous</a> pour ajouter des commentaires.</p>
             <?php }
             while($comment = $comments->fetch()) {
         ?>

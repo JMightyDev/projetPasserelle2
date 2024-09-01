@@ -38,8 +38,8 @@
             </form>
         <?php
             } else { ?>
-                <a class='text-decoration-none' href='<?= BASE_URL ?>login'>Connectez-vous</a> pour ajouter des commentaires.";
-            <?php } 
+                <p><a class='text-decoration-none' href='<?= BASE_URL ?>login'>Connectez-vous</a> pour ajouter des commentaires.</p>
+            <?php }
             while($comment = $comments->fetch()) {
         ?>
             <div class="card card-body mb-2 col-lg-6">
