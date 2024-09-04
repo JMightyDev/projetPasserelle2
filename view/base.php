@@ -4,15 +4,6 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5Y6FV48JS"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-F5Y6FV48JS');
-        </script>
         <script src="<?= $path ?>node_modules/tarteaucitronjs/tarteaucitron.min.js"></script>
         <script>
             tarteaucitron.init({
@@ -123,9 +114,11 @@
         </footer>
         <script src="<?= $path ?>node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript">
+            tarteaucitron.user.gtagUa = 'G-F5Y6FV48JS';
+            tarteaucitron.user.gtagCrossdomain = ['jmighty.fr', 'blog.jmighty.fr'];
+            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
             (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
             (tarteaucitron.job = tarteaucitron.job || []).push('gcmfunctionality');
-            (tarteaucitron.job = tarteaucitron.job || []).push('gcmpersonalization');
         </script>
     </body>
 </html>
