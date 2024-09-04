@@ -54,7 +54,6 @@
                 "partnersList": false /* Details the number of partners on the popup and middle banner */
             });
         </script>
-
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5Y6FV48JS"></script>
         <script>
