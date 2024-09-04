@@ -4,6 +4,15 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5Y6FV48JS"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-F5Y6FV48JS');
+        </script>
         <script src="<?= $path ?>node_modules/tarteaucitronjs/tarteaucitron.min.js"></script>
         <script>
             tarteaucitron.init({
@@ -53,15 +62,6 @@
                 
                 "partnersList": false /* Details the number of partners on the popup and middle banner */
             });
-        </script>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5Y6FV48JS"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-F5Y6FV48JS');
         </script>
         <meta charset="UTF-8">
         <meta name="description" content="Knight's Corner - The place white knights developpers discuss">
@@ -122,5 +122,8 @@
             </div>
         </footer>
         <script src="<?= $path ?>node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
+        </script>
     </body>
 </html>
