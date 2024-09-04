@@ -116,6 +116,8 @@
         <script type="text/javascript">
             tarteaucitron.user.gtagUa = 'G-F5Y6FV48JS';
             tarteaucitron.user.gtagCrossdomain = ['jmighty.fr', 'blog.jmighty.fr'];
+            tarteaucitron.user.googletagmanagerId = 'GTM-5MM7V8R9';
+            (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
             (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
             (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
             (tarteaucitron.job = tarteaucitron.job || []).push('gcmfunctionality');
