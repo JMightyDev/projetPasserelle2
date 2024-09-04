@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="fr" class="h-100">
     <head>
-        <script src="<?= $path ?>node_modules/tarteaucitronjs/tarteaucitron.min.js"></script>
+        <script src="<?= $path ?>node_modules/tarteaucitronjs/tarteaucitron.js"></script>
         <script>
             tarteaucitron.init({
                 "privacyUrl": "", /* Privacy policy url */
