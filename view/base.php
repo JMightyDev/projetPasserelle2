@@ -54,6 +54,15 @@
                 "partnersList": false /* Details the number of partners on the popup and middle banner */
             });
         </script>
+        <script type="text/javascript">
+            tarteaucitron.user.gtagUa = 'G-F5Y6FV48JS';
+            tarteaucitron.user.gtagCrossdomain = ['jmighty.fr', 'blog.jmighty.fr'];
+            tarteaucitron.user.googletagmanagerId = 'GTM-5MM7V8R9';
+            (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
+            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+            (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
+            (tarteaucitron.job = tarteaucitron.job || []).push('gcmfunctionality');
+        </script>
         <meta charset="UTF-8">
         <meta name="description" content="Knight's Corner - The place white knights developpers discuss">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -117,14 +126,5 @@
             </div>
         </footer>
         <script src="<?= $path ?>node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript">
-            tarteaucitron.user.gtagUa = 'G-F5Y6FV48JS';
-            tarteaucitron.user.gtagCrossdomain = ['jmighty.fr', 'blog.jmighty.fr'];
-            tarteaucitron.user.googletagmanagerId = 'GTM-5MM7V8R9';
-            (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
-            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-            (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
-            (tarteaucitron.job = tarteaucitron.job || []).push('gcmfunctionality');
-        </script>
     </body>
 </html>
