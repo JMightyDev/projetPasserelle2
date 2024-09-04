@@ -63,6 +63,10 @@
     </head>
 
     <body class="bg-secondary pt-5 d-flex flex-column h-100">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MM7V8R9"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <header>
             <nav class="navbar navbar-expand-lg bg-perso1 fixed-top" data-bs-theme="dark">
                 <div class="container-fluid">
