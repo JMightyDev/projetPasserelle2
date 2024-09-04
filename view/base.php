@@ -124,6 +124,8 @@
         <script src="<?= $path ?>node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript">
             (tarteaucitron.job = tarteaucitron.job || []).push('gcmanalyticsstorage');
+            (tarteaucitron.job = tarteaucitron.job || []).push('gcmfunctionality');
+            (tarteaucitron.job = tarteaucitron.job || []).push('gcmpersonalization');
         </script>
     </body>
 </html>
