@@ -122,7 +122,7 @@
         <hr class="hr mt-auto mb-0 mx-5">
         <footer class="footer py-3">
             <div class="container">
-                <span class="text-perso1">© JMighty 2024</span> - <a href="#" id="open_preferences_center">Change your preferences</a>
+                <span class="text-perso1">© JMighty 2024</span>
             </div>
         </footer>
         <script src="<?= $path ?>node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
